@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>ChatGPT Auth Helper</title>
+    <link href="assets/css/corporate-ui-dashboard.css" rel="stylesheet"/>
+</head>
+
+<body class="">
+<main class="main-content mt-0">
+    <section>
+        <div class="page-header min-vh-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 d-flex flex-column mx-auto">
+                        <div class="card-body">
+                            <div id="stepOne">
+                                <p class="w-100 mt-4 mb-3 text-bold text-success" id="txtTip">正在获取 Access Token ...</p>
+                            </div>
+                        </div>
+                        <div class="card card-plain mt-8">
+                            <div id="stepThree" style="display: none">
+                                <h3 class="mb-3 text-success"><label for="accessToken">Access Token</label></h3>
+                                <textarea class="form-control clipboard" id="accessToken" rows="8" data-clipboard-target="#accessToken" readonly></textarea>
+                                <span class="text-xs text-mute copy-result">点击文本框即可复制</span>
+                                <h5 class="mb-3 mt-3">完整数据</h5>
+                                <pre id="fullData"></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="position-absolute w-40 top-0 end-0 h-100 d-md-block d-none">
+                            <div class="oblique-image position-absolute fixed-top ms-auto h-100 z-index-0 bg-cover ms-n8"
+                                 style="background-image: url('assets/img/image-sign-in.jpg');">
+                                <div class="blur mt-12 p-4 text-center border border-white border-radius-md position-absolute fixed-bottom m-4">
+                                    <h2 class="mt-3 text-dark font-weight-bold">
+                                        ChatGPT Auth Helper
+                                    </h2>
+                                    <h6 class="text-dark text-sm mt-4">
+                                        Core by FakeOpen. Theme by @ImYrS.
+                                    </h6>
+                                    <h7 class="text-dark text-sm mt-4">
+                                        由于一些你懂的原因，特申明：这是个人服务，非OpenAI的官方服务！
+                                    </h7>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--   Core JS Files   -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/clipboard.min.js"></script>
+<script src="auth.js"></script>
+</body>
+</html>

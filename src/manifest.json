@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Auth Helper",
+  "version": "2.0.0",
+  "description": "A simple Chrome extension to help you login ChatGPT.",
+  "author": "Neo Peng",
+  "homepage_url": "https://github.com/wozulong/ChatGPTAuthHelper",
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_icon": "icon.png",
+    "default_title": "点击打开ChatGPT Auth服务"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "auth.html",
+        "auth.js",
+        "assets/**"
+      ],
+      "matches": []
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.fakeopen.com/auth"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
