@@ -25,7 +25,7 @@ chrome.storage.local.get(['url'], function (result) {
     const data = {
         "callback": result.url
     };
-    fetch('https://ai-' + yesterday() + '.fakeopen.com/auth/code/login', {
+    fetch('https://token.oaifree.com/auth/code/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -48,10 +48,3 @@ chrome.storage.local.get(['url'], function (result) {
             showError(error);
         });
 });
-
-function yesterday() {
-    let now = new Date();
-
-    let prev = new Date(now.getTime() - 864e5);
-    return prev.toISOString().substring(0, 10).replaceAll('-', '');
-}

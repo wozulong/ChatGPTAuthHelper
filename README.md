@@ -9,4 +9,4 @@
 3. 右上角打开 `开发者模式` 。
 4. 点击左上角 `加载已解压的扩展程序` 按钮，选择刚下载解压的插件文件夹内的 `src` 目录，确定安装。
 5. 你可以在 `扩展程序` 中看到 `ChatGPT Auth Helper` 说明安装成功。
-6. 现在你的 `Chrome` 可以用来使用 `https://ai.fakeopen.com/auth` 服务了。
+6. 现在你的 `Chrome` 可以用来使用 `https://token.oaifree.com/auth` 服务了。

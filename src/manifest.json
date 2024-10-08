@@ -1,14 +1,15 @@
 {
   "manifest_version": 3,
   "name": "ChatGPT Auth Helper",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A simple Chrome extension to help you login ChatGPT.",
   "author": "Neo Peng",
   "homepage_url": "https://github.com/wozulong/ChatGPTAuthHelper",
   "permissions": [
     "tabs",
     "webRequest",
-    "storage"
+    "storage",
+    "cookies"
   ],
   "host_permissions": [
     "<all_urls>"
@@ -33,7 +34,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://*.fakeopen.com/auth"
+        "https://token.oaifree.com/auth"
       ],
       "js": [
         "content.js"
