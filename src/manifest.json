@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "ChatGPT Auth Helper",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A simple Chrome extension to help you login ChatGPT.",
   "author": "Neo Peng",
   "homepage_url": "https://github.com/wozulong/ChatGPTAuthHelper",

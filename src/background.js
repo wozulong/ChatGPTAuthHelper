@@ -43,7 +43,6 @@ chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
                 url: `https://${domain}/`,
                 name: "auth0",
                 value: d,
-                domain: "." + domain,
                 path: "/",
                 secure: true,
                 httpOnly: true
